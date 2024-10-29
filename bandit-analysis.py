@@ -6,7 +6,7 @@ from collections import Counter
 with open("bandit_report.json") as file:
     data = json.load(file)
 
-# Extract issue types and names
+# issue types and names
 issues = [
     (
         issue["test_id"],
@@ -19,7 +19,7 @@ issues = [
 ]
 
 
-# Count occurrences of each issue type (test_id and issue_text combination)
+# Count occurrences of each issue type
 issue_counts = Counter(issues)
 sorted_issues = sorted(issue_counts.items(), key=lambda x: x[1], reverse=True)
 
