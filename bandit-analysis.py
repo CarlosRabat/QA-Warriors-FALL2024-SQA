@@ -48,4 +48,4 @@ with open("Security Weaknesses.csv", mode="w") as file:
             ]
         )
 
-print("CSV generated.")
+print("CSV has been generated.")
