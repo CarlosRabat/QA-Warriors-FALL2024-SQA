@@ -28,7 +28,7 @@ sorted_issues = sorted(issue_counts.items(), key=lambda x: x[1], reverse=True)
 with open("Security Weaknesses.csv", mode="w") as file:
     writer = csv.writer(file)
     writer.writerow(
-        ["ID", "Issue Text", "Severity", "File Name", "Line Number", "Count"]
+        ["ID", "Issue Text", "Severity", "File Name", "Line Number"]
     )
     for (
         issue_id,
