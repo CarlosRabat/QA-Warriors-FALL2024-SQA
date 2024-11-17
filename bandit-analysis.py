@@ -20,8 +20,8 @@ issues = [
 
 
 # Count occurrences of each issue type
-issue_counts = Counter(issues)
-sorted_issues = sorted(issue_counts.items(), key=lambda x: x[1], reverse=True)
+# issue_counts = Counter(issues)
+# sorted_issues = sorted(issue_counts.items(), key=lambda x: x[1], reverse=True)
 
 
 # Write to CSV
@@ -36,7 +36,7 @@ with open("Security Weaknesses.csv", mode="w") as file:
         issue_severity,
         filename,
         line_number,
-    ) in sorted_issues:
+    ) in issues:
         writer.writerow(
             [
                 issue_id.strip(),
