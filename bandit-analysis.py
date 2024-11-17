@@ -36,15 +36,14 @@ with open("Security Weaknesses.csv", mode="w") as file:
         issue_severity,
         filename,
         line_number,
-    ), count in sorted_issues:
+    ) in sorted_issues:
         writer.writerow(
             [
-                issue_id,
-                issue_text,
-                issue_severity,
-                filename,
+                issue_id.strip(),
+                issue_text.strip(),
+                issue_severity.strip(),
+                filename.strip(),
                 line_number,
-                count,
             ]
         )
 
