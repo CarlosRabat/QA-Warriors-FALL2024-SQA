@@ -1,6 +1,5 @@
 import json
 import csv
-from collections import Counter
 
 # Load  Bandit report
 with open("bandit_report.json") as file:
@@ -17,11 +16,6 @@ issues = [
     )
     for issue in data["results"]
 ]
-
-
-# Count occurrences of each issue type
-# issue_counts = Counter(issues)
-# sorted_issues = sorted(issue_counts.items(), key=lambda x: x[1], reverse=True)
 
 
 # Write to CSV
