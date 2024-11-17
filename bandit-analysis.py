@@ -2,7 +2,7 @@ import json
 import csv
 from collections import Counter
 
-# Load the Bandit report
+# Load  Bandit report
 with open("bandit_report.json") as file:
     data = json.load(file)
 
