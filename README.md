@@ -4,5 +4,5 @@
 
 ### Group Members:
 - **Carlos Rabat**
-- **Samia Martin**
+- **Samia Matin**
 - **Will Segrest**
