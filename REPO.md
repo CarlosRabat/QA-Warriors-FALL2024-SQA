@@ -6,11 +6,16 @@
 
 ## Task 2: Create a fuzz.py file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the fuzz.py file. fuzz.py will be automatically executed from GitHub actions. 
 
--While doing this task, we learn how Fuzz provides valuable insights into the importance of input validation and error handling. By automating tests on common Python methods, we learn about edge cases such as invalid encodings, special characters, and type conversion issues that could lead to unexpected failures. This exercise highlights the need for defensive programming practices and the benefits of integrating fuzz testing into CI pipelines. Automating the process via GitHub Actions ensures these vulnerabilities are caught early, improving code quality.
+- While doing this task, we learn how Fuzz provides valuable insights into the importance of input validation and error handling. By automating tests on common Python methods, we learn about edge cases such as invalid encodings, special characters, and type conversion issues that could lead to unexpected failures. This exercise highlights the need for defensive programming practices and the benefits of integrating fuzz testing into CI pipelines. Automating the process via GitHub Actions ensures these vulnerabilities are caught early, improving code quality.
 
 ## Task 3: Integrate forensics by modifying 5 Python methods of your choice
 
 - For this task, we integrated forensics by modifying five Python methods in `mining.py`. We created a new class, `logger.py`, with a method `loggingObject()` that sets up logging using the logging module. The logger is configured to store logs in a file (`QA-WARRIORS.log`) with a format that includes timestamps, log levels, and method names. We then integrated this logger into the five modified methods to capture events like function calls, exceptions, and key processing steps. Through implementing forensics, we learned how logging can greatly aid in debugging. It allows for easier identification of where and when something goes wrong in the application. The detailed timestamp and log level give context to each logged event, making it easier to trace any issues and understand the application flow.
+
+![Logger](https://github.com/user-attachments/assets/0c687c94-0661-409f-9711-cc1272c9b589)
+
+![Forensics_Python_Methods](https://github.com/user-attachments/assets/fb8dbfaf-a575-4f4c-8444-80aad0d7902c)
+
 
 ## Task 4: Continous Integratrion
 
